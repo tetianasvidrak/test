@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/test/static/css/main.4210c252.css",
+    "main.js": "/test/static/js/main.e2fefbaf.js",
+    "static/js/859.8036a408.chunk.js": "/test/static/js/859.8036a408.chunk.js",
+    "static/css/691.d647fb25.chunk.css": "/test/static/css/691.d647fb25.chunk.css",
+    "static/js/691.43a5cf29.chunk.js": "/test/static/js/691.43a5cf29.chunk.js",
+    "static/media/card-img.png": "/test/static/media/card-img.38ea3189a2c780f4bbbf.png",
+    "static/media/LogoGoIt.svg": "/test/static/media/LogoGoIt.e917114d7945c04c85a8946a331d28b6.svg",
+    "index.html": "/test/index.html",
+    "static/media/expand.svg": "/test/static/media/expand.a0d7c76b47bf772d4197.svg",
+    "main.4210c252.css.map": "/test/static/css/main.4210c252.css.map",
+    "main.e2fefbaf.js.map": "/test/static/js/main.e2fefbaf.js.map",
+    "859.8036a408.chunk.js.map": "/test/static/js/859.8036a408.chunk.js.map",
+    "691.d647fb25.chunk.css.map": "/test/static/css/691.d647fb25.chunk.css.map",
+    "691.43a5cf29.chunk.js.map": "/test/static/js/691.43a5cf29.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4210c252.css",
+    "static/js/main.e2fefbaf.js"
+  ]
+}
