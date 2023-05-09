@@ -1,0 +1,29 @@
+.inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.filter {
+    margin-bottom: 30px;
+    text-align: right;
+    align-self: flex-end;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.more {
+    cursor: pointer;
+    min-width: 100px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    color: #EBD8FF;
+    background: linear-gradient(114.99deg, #471CA9 -0.99%, #5736A3 54.28%, #4B2A99 78.99%);;
+}
