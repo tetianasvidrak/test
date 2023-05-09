@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# User Cards React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application that implements user cards according to the technical task. The user cards have an avatar, user name, number of tweets, number of followers, and a button that allows you to follow/unfollow the user. The app uses a mock API service to fetch user data.
 
-## Available Scripts
+## Criteria for Completion
 
-In the project directory, you can run:
+- The layout is fixed in pixels, semantic, and valid.
+- There are no errors in the browser console.
+- The app is built using native JS with bundlers or React.
+- Interactivity works according to the technical task.
+- The code is formatted and without comments.
+- The repository has a README.md file.
 
-### `npm start`
+## Technical Task
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+According to the design, the user cards should be implemented.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+When the Follow button is clicked, the text changes to Following, and the button color changes. The number of followers is also increased by 1, including your own follow. The initial number of followers is 100,500, and it becomes 100,501 when the button is clicked.
 
-### `npm test`
+When the page is refreshed, the state of the button remains in the Following state, and the color does not change. The number of followers does not decrease to the initial value.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+When the Follow button is clicked again, its text and color change back to the initial state. The number of followers is also decreased by 1 (from 100,501 to 100,500).
 
-### `npm run build`
+The number 100,500 should be written in the code as one value. In the UI, it should be displayed with a comma (100,500).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A personal backend should be created using the UI service mockapi.io. A resource named users should be created. The user object should have the following fields: id, user, tweets, followers, and avatar.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The app should display at least 12 users with different values in the database. Pagination should be implemented, with 3 tweets displayed per page. The rest of the tweets should be loaded when the Load More button is clicked.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Follow and Following Design
 
-### `npm run eject`
+Design: https://www.figma.com/file/zun1oP6NmS2Lmgbcj6e1IG/Test?node-id=0%3A1&t=VoiYTfiXggVItgVd-1
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Additional Task
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+For completing the additional task, extra points will be given. You cannot get the maximum score without completing this task.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Implement routing using React Router. The application should have the following routes:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `/` - displays the user cards
+- `/users/:userId` - displays the user details page, where you can see the user's tweets and followers.
